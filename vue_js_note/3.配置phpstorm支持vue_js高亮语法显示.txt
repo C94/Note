@@ -1,0 +1,3 @@
+从phpstorm的插件（plugins）管理中添加vue.js
+
+打开preferences,搜索 plugin, 点击Browse Repository, 搜索vue.js, 点击install，重启

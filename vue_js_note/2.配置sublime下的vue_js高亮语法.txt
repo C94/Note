@@ -1,0 +1,9 @@
+1.准备语法高亮插件vue-syntax-highlight。下载地址：https://github.com/vuejs/vue-syntax-highlight,解开压缩包vue-syntax-highlight-master，其内所有文件备用
+
+2.将vue-syntax-highlight植入sbulime,进入sublime,选择菜单项“Preferences->Browse Packages”
+
+3.在打开的文件夹中创建"Vue"文件夹
+
+4.在Vue文件夹中,将vue-syntax-highlight-master压缩包解压后的所有文件考入
+
+5.sublime载入vue-syntax-highlight插件,按下快捷键“ctrl+shift+p”,在打开的packages输入框中输入vue,选择“Set Syntax:Vue Component”进行加载
