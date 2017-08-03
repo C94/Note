@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3渐变效果</title>
+</head>
+<style>
+    div {
+        width: 500px;
+        height: 300px;
+        /*background-image: linear-gradient(orange, green);*/  /* 默认 */
+        /*background-image: linear-gradient(to top right, orange, green);*/
+        
+        /*通过角度设置方位  45deg */
+        /*background-image: linear-gradient(45deg, red, blue, yellow, white);*/
+
+        /*通过百分比设置多色线的位置*/
+        /*background-image: linear-gradient(45deg, red 0%, blue 20%, yellow 30%, white);*/
+
+        /*加上透明效果*/
+        /*background-color: red;*/
+        /*background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.6), rgb(0, 0, 0));*/
+
+        /*圆形的渐变，从圆心向四周扩散*/
+        /*background-image: radial-gradient(blue, yellow);*/
+
+        /*从顶部top向四周发散*/
+        /*background-image: radial-gradient(circle at top, red, gray);*/
+
+        /*从右上角向四周发散*/
+        /*background-image: radial-gradient(circle at top right, red, gray);*/
+
+        /*指定径向渐变的半径长度为从圆心到离圆心最近的边*/
+        background-image: radial-gradient(circle closest-side, red, gray);
+
+
+    }
+</style>
+<body>
+    <div>背景</div>
+</body>
+</html>

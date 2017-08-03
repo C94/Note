@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>嵌入模式</title>
+</head>
+<body>
+    <!--
+        当用户在 ismap 图像上单击了某处时，浏览器会自动把鼠标的 x、y 位置（相对于图像的左上角）发送到服务器端。
+        特殊的服务器端软件（在本例中是 demo_form.asp 程序）可以根据这些坐标来做出响应。
+    -->
+    <a href="文本元素.html"><img ismap src="../imgs/1.jpg" alt="图片" width="120" height="100"></a>
+    <br>
+    <a href="http://www.baidu.com" target="baidu">百度</a>
+    <!--iframe 元素会创建包含另外一个文档的内联框架（即行内框架）-->
+    <iframe name="baidu" width="400" height="250"></iframe>
+    <br>
+    <!--<embed> 标签定义嵌入的内容，比如插件。-->
+    <embed src="http://www.w3school.com.cn/i/helloworld.swf" type="application/x-shockwave-flash" />
+    <br>
+    <!--<progress> 标签标示任务的进度（进程）。-->
+    <progress value="22" max="100"></progress>
+
+    <!--<video> 标签定义视频，比如电影片段或其他视频流。-->
+    <video src="../video/movie.ogg" controls="controls" loop muted poster="../imgs/1.jpg">视频播放</video>
+</body>
+</html>

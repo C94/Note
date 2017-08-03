@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas</title>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <!--矩形渐变-->
+    <canvas id="myCanvas" style="width: 300px;height: 200px;border:1px solid black"></canvas>
+
+    <img id="gitImg" src="../img/github.jpg">
+    <canvas id="ImgCanvas2" style="width: 300px;height: 200px;border:1px solid black"></canvas>
+
+    <!--SVG  可伸缩矢量图形-->
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="190">
+        <polygon points="100,10 40,180 190,60 10,60 160,180"
+                 style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;">
+    </svg>
+</body>
+<script>
+//  矩形渐变
+    var c = $('#myCanvas')[0];
+    var ctx = c.getContext("2d");
+    var grb = ctx.createLinearGradient(0,0,200,0)//创建渐变
+    grb.addColorStop(0,'red');
+    grb.addColorStop(1,'white');
+    ctx.fillStyle=grb;   //填充渐变
+    ctx.fillRect(0,0,300,200);
+
+//  图片填充canvas
+    var c2 = $('#ImgCanvas2')[0];
+    var ctx2 = c2.getContext("2d");
+    var img = $('#gitImg')[0];
+    ctx2.drawImage(img,10,10);
+</script>
+</html>

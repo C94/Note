@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>文本信息</title>
+</head>
+<body>
+    b标签<b>HTML5</b><br>
+    strong标签<strong>HTML5</strong><br>
+    wbr标签这是根据<wbr>浏览器<wbr>缩放，用来<wbr>安全<wbr>换行<br>
+    u标签<u>添加下划线</u><br>
+    int标签<ins>添加下划线</ins><br>
+    small标签<small>缩小字体</small><br>
+    sub标签下标H<sub>2</sub><br>
+    q标签<q>加上双引号,引用从其他地方</q><br>
+    cite标签<cite>倾斜，语义，引入其他作品标题</cite><br>
+    bdo标签默认文本是从左到右<bdo>HTML5</bdo><br>
+    bdo标签加上属性是从右到左<bdo dir="rtl">HTML5</bdo><br>
+    mark标签<mark>加上黄色的背景和黑色的字体</mark><br>
+    time标签放时间，其实也没什么卵用<time>2017-06-17</time>
+
+    <figure>
+        <figcaption>这是图片的标题</figcaption>
+        <img src="../imgs/1.jpg" style="width: 100px;height: 100px;">
+    </figure>
+
+    <table border="1" style="width:300px;">
+        <colgroup>
+            <!--这是设置列的颜色属性等-->
+            <col>
+            <!--下标是1-->
+            <col style="background-color: rebeccapurple">
+            <col style="width: 100px;">
+            <col style="background-color: red">
+        </colgroup>
+        <caption>这是表格的标题</caption>
+        <!--尾部的标签是不分位置的-->
+        <tfoot>
+            <tr>
+                <td colspan="2">这是表格的尾部部分，不区分标签在代码中的位置</td>
+                <td>这是尾部部分</td>
+                <td>这是尾部部分</td>
+                <td>这是尾部部分</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>这是身体部分</td>
+                <td>这是身体部分</td>
+                <td>这是身体部分</td>
+                <td>这是身体部分</td>
+                <td>这是身体部分</td>
+            </tr>
+        </tbody>
+        <!--头部的标签是部分位置的-->
+        <thead>
+        <tr>
+            <td colspan="2">这是表格的头部部分，不区分标签在代码中的位置</td>
+            <td>这是头部部分</td>
+            <td>这是头部部分</td>
+            <td>这是头部部分</td>
+        </tr>
+        </thead>
+    </table>
+</body>
+</html>
