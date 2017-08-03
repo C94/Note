@@ -1,0 +1,7 @@
+问题：
+1. Module build failed: Error: Cannot find module '模块名'
+方法：
+    cnpm install 模块名 --save-dev(关于环境的，表现为npm run dev 启动不了)
+    cnpm install 模块名 --save(关于项目的，比如main.js，表现为npm run dev 成功之后控制台报错)
+    比如escape-string-regexp、strip-ansi、has-ansi、is-finite、emojis-list
+    链接：http://www.jianshu.com/p/5ba253651c3b
