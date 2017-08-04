@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas</title>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <canvas id="myCanvas1" style="width: 200px;height: 100px;border: 1px solid black"></canvas>
+    <canvas id="myCanvas2" style="width: 200px;height: 100px;border: 1px solid black"></canvas>
+    <canvas id="myCanvas3" style="width: 200px;height: 100px;border: 1px solid black"></canvas>
+    <canvas id="myCanvas4" style="width: 200px;height: 100px;border: 1px solid black"></canvas>
+    <canvas id="myCanvas5" style="width: 200px;height: 100px;border: 1px solid black"></canvas>
+    <canvas id="myCanvas6" style="width: 200px;height: 100px;border: 1px solid black"></canvas>
+</body>
+<script>
+    //使用 JavaScript 来绘制图像
+
+    //长方形
+    var c = document.getElementById('myCanvas');     //找到对象
+    var c1 = $('#myCanvas1')[0];      //jquery返回的是对象，要转换为DOM对象才可以。
+    var ctx1 = c1.getContext('2d');   //创建context对象
+    ctx1.fillStyle = "blue";          //定义style
+    ctx1.fillRect(0,0,150,75);
+
+    //横线
+    var c2 = $('#myCanvas2')[0];
+    var ctx2 = c2.getContext('2d');
+    ctx2.moveTo(0,0);       //moveTo(x,y) 定义线条开始坐标
+    ctx2.lineTo(300,150);   //lineTo(x,y) 定义线条结束坐标
+    ctx2.stroke();          //绘制线条我们必须使用到 "ink" 的方法，就像stroke().
+
+    //圆形
+    var c3 = $('#myCanvas3')[0];
+    var ctx3 = c3.getContext('2d');
+    ctx3.beginPath();
+    ctx3.arc(95,50,40,0,2*Math.PI);   //arc(x,y,r,start,stop)
+    ctx3.stroke();
+
+    //实心字体
+    var c4 = $('#myCanvas4')[0];
+    var ctx4 = c4.getContext('2d');
+    ctx4.font = "30px Arial";
+    ctx4.fillText('你好！', 100, 100);
+
+    //空心字体
+    var c5 = $('#myCanvas5')[0];
+    var ctx5 = c5.getContext('2d');
+    ctx5.font = "30px Arial";
+    ctx5.strokeText('你好！', 100, 100);
+</script>
+</html>

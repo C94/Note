@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>input类型</title>
+</head>
+<body>
+
+<form action="demo-form.php">
+    <!--color 类型用在input字段主要用于选取颜色   谷歌，火狐浏览器支持-->
+    选择颜色：<input type="color" name="favcolor">
+    <br>
+    <!--date 类型允许你从一个日期选择器选择一个日期。  谷歌支持,火狐不支持-->
+    日期：<input type="date" name="datetime">
+    <br>
+    <!--email 类型用于应该包含 e-mail 地址的输入域。-->
+    email： <input type="email" name="email">
+    <br>
+    <!--month 类型允许你选择一个月份。谷歌支持,火狐不支持-->
+    月和年：<input type="month" name="bmonth">
+    <br>
+    <!--number 类型用于应该包含数值的输入域。谷歌支持,火狐不支持-->
+    数字： <input type="number" name="quantity" min="1" max="5">
+    <br>
+    <!--range 类型用于应该包含一定范围内数字值的输入域。-->
+    范围：<input type="range" name="points" min="10" max="99">
+    <br>
+    <!--search 类型用于搜索域，比如站点搜索或 Google 搜索。-->
+    Search Google: <input type="search" name="googlesearch">
+    <br>
+    <!--定义输入电话号码字段:-->
+    电话号码: <input type="tel" name="usrtel">
+    <br>
+
+    <!--定义可输入时间控制器（无时区）：  谷歌支持，火狐不支持-->
+    <input type="time" name="user_time">
+    <br>
+
+    <!--url 类型用于应该包含 URL 地址的输入域。   谷歌支持，火狐支持-->
+    <input type="url" name="homepage">
+
+    <!--week 类型允许你选择周和年。谷歌支持，火狐不支持-->
+    定义周和年（无时区）: <input type="week" name="week_year">
+    <input type="submit">
+</form>
+
+</body>
+</html>
